@@ -8,10 +8,23 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Button x:Name="AddButton" Content="Thêm" Click="AddButton_Click" Margin="0,0,10,0"/>
+            <Button x:Name="DeleteButton" Content="Xóa" Click="DeleteButton_Click"/>
+        </StackPanel>
+
         <controls:DataGrid
+            Grid.Row="1"
             AutoGenerateColumns="False"
             GridLinesVisibility="Horizontal"
-            ItemsSource="{x:Bind ViewModel.Source, Mode=OneWay}">
+            ItemsSource="{x:Bind ViewModel.Source, Mode=OneWay}"
+            SelectionMode="Single"
+            x:Name="DataGrid">
             <controls:DataGrid.Resources>
                 <SolidColorBrush x:Key="DataGridColumnHeaderBackgroundColor" Color="Transparent" />
             </controls:DataGrid.Resources>
