@@ -1,0 +1,47 @@
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+
+# VS files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Windows auto-generated database files
+*.dbmdl
+
+# Windows App SDK / WinUI 3 build cache
+GeneratedFiles/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files
+*.swp
+*.bak
+*.tmp
+*.log
+
+# Others
+*.vsix
+*.pdb
+*.cache
+*.ilk
+*.obj
+
+# Publish artifacts
+*.publish/
+
+# Dotnet CLI
+.vspscc
+*.publishsettings
